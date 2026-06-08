@@ -1,0 +1,81 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Data and logs
+data/
+vectordb/
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+wheels/
+
+# Docker
+.dockerignore
+
+# Temporary files
+*.tmp
+*.temp
+.~*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.hypothesis/
+
+# Testing
+.pytest_cache/
+coverage.xml
+
+# IDE specific
+.vscode/settings.json
+.idea/workspace.xml
+
+# Documentation
+site/
+docs/_build/

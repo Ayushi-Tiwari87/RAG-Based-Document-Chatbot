@@ -1,0 +1,155 @@
+# ============================================================================
+# RAG CHATBOT - PRODUCTION REQUIREMENTS
+# ============================================================================
+# 
+# Core Dependencies: Essential packages for the application
+# LangChain Ecosystem: LLM framework and integrations
+# LLM & Embeddings: Groq API and HuggingFace models
+# Vector Database: ChromaDB for embeddings storage
+# Document Processing: PDF, DOCX, TXT file handling
+# API Framework: FastAPI and ASGI server
+# Frontend: Streamlit web interface
+# ML/AI Libraries: NumPy, PyTorch (CPU by default)
+# Testing: Pytest framework
+# Code Quality: Linting, formatting, type checking
+# Utilities: Additional helper libraries
+#
+# ============================================================================
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+python-dotenv==1.0.1              # Environment variable management
+pydantic==2.5.3                   # Data validation using Python type annotations
+pydantic-core==2.14.6             # Core validation logic for pydantic
+
+# ============================================================================
+# LANGCHAIN ECOSYSTEM
+# ============================================================================
+langchain==0.1.9                  # LLM application framework
+langchain-core==0.1.27            # Core abstractions for LangChain
+langchain-community==0.0.19       # Community integrations
+langchain-huggingface==0.0.35     # HuggingFace integrations for LangChain
+
+# ============================================================================
+# LLM AND API CLIENTS
+# ============================================================================
+groq==0.4.2                       # Groq API client for high-speed LLM inference
+sentence-transformers==2.2.2      # State-of-the-art sentence embeddings
+transformers==4.35.2              # Hugging Face Transformers library
+tokenizers==0.14.1                # Fast tokenizer implementations
+huggingface-hub==0.19.4           # Hugging Face Hub API client
+
+# ============================================================================
+# VECTOR DATABASE
+# ============================================================================
+chromadb==0.4.24                  # Vector database with persistent storage
+hnswlib==0.7.0                    # Approximate nearest neighbor search library
+PyYAML==6.0.1                     # YAML parser and emitter for Python
+
+# ============================================================================
+# DOCUMENT PROCESSING
+# ============================================================================
+pypdf==4.0.1                      # PDF text extraction (replaces PyPDF2)
+python-docx==0.8.11               # DOCX (Word document) processing
+pillow==10.1.0                    # Image processing (for PDF images)
+pdfrw==0.4.post0                  # PDF reading and writing
+
+# ============================================================================
+# API FRAMEWORK
+# ============================================================================
+fastapi==0.109.0                  # Modern async web framework
+uvicorn==0.27.0                   # ASGI server implementation
+python-multipart==0.0.6           # Multipart form data parser
+starlette==0.35.0                 # ASGI toolkit (FastAPI dependency)
+
+# ============================================================================
+# FRONTEND
+# ============================================================================
+streamlit==1.28.1                 # Web app framework for data apps
+requests==2.31.0                  # HTTP library for Python
+urllib3==2.1.0                    # HTTP client (requests dependency)
+
+# ============================================================================
+# ML/AI LIBRARIES
+# ============================================================================
+numpy==1.24.3                     # Numerical computing library
+torch==2.1.2                      # PyTorch (CPU version - install CUDA version manually if needed)
+scipy==1.11.4                     # Scientific computing library
+scikit-learn==1.3.2               # Machine learning library
+
+# ============================================================================
+# TESTING
+# ============================================================================
+pytest==7.4.3                     # Testing framework
+pytest-asyncio==0.23.0            # AsyncIO support for pytest
+pytest-cov==4.1.0                 # Code coverage for pytest
+pytest-mock==3.12.0               # Mocking support for pytest
+
+# ============================================================================
+# CODE QUALITY & LINTING
+# ============================================================================
+black==23.12.1                    # Code formatter
+flake8==6.1.0                     # Linter for Python
+mypy==1.7.1                       # Static type checker
+isort==5.13.2                     # Import statement sorter
+autopep8==2.0.4                   # Automatic PEP 8 formatter
+
+# ============================================================================
+# UTILITIES & HELPERS
+# ============================================================================
+tqdm==4.66.1                      # Progress bars for iterations
+python-dateutil==2.8.2            # Extensions to Python datetime module
+pytz==2023.3                      # Timezone library
+certifi==2023.7.22                # Mozilla's CA Bundle (SSL certificates)
+
+# ============================================================================
+# OPTIONAL: PERFORMANCE OPTIMIZATIONS
+# ============================================================================
+# Uncomment these if you need GPU acceleration or better performance:
+# torch-cuda-runtime==12.1.0       # CUDA runtime for GPU acceleration
+# accelerate==0.24.1               # Multi-GPU/TPU training support
+# redis==5.0.1                     # Redis for caching
+# psycopg2-binary==2.9.9           # PostgreSQL adapter
+
+# ============================================================================
+# OPTIONAL: MONITORING & LOGGING
+# ============================================================================
+# Uncomment for production monitoring:
+# prometheus-client==0.19.0        # Prometheus metrics
+# sentry-sdk==1.39.1               # Error tracking with Sentry
+# python-json-logger==2.0.7        # JSON logging formatter
+
+# ============================================================================
+# OPTIONAL: SECURITY
+# ============================================================================
+# Uncomment for enhanced security:
+# python-jose==3.3.0               # JWT token handling
+# passlib==1.7.4                   # Password hashing
+# cryptography==41.0.7             # Cryptographic recipes
+
+# ============================================================================
+# NOTES FOR USERS
+# ============================================================================
+# 
+# Installation:
+#   pip install -r requirements.txt
+#
+# GPU Acceleration (optional):
+#   Replace: pip install torch==2.1.2
+#   With: pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+#
+# Development Installation:
+#   pip install -r requirements.txt
+#   pip install black flake8 mypy isort autopep8
+#
+# Production Installation:
+#   pip install --no-cache-dir -r requirements.txt
+#
+# Update All Packages:
+#   pip install --upgrade -r requirements.txt
+#
+# Freeze Current Environment:
+#   pip freeze > requirements-freeze.txt
+#
+# ============================================================================
