@@ -17,7 +17,7 @@ A complete, production-ready Retrieval-Augmented Generation (RAG) chatbot built 
 
 ## 📋 Prerequisites
 
-- Python 3.12+
+- Python 3.11+
 - Docker & Docker Compose (optional, for containerized deployment)
 - Groq API Key ([Get it here](https://console.groq.com))
 
